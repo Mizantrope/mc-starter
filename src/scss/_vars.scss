@@ -1,0 +1,28 @@
+// General
+$bg-color: #fff;
+$font-base: Inter;
+$font-custom: RubikWetPaint;
+$font-color: #333;
+$font-size: 10px;
+$line-height: 1.4;
+$min-width: 32rem;
+
+// Sections
+$section-offset: 8rem;
+
+// Grid
+$grid-width: 1190px;
+
+$grid-breakpoints: (
+    xl: 1199px,
+    lg: 959px,
+    md: 639px,
+    sm: 479px
+);
+
+$grid-max: (
+    xl: 970px,
+    lg: 650px,
+    md: 490px,
+    sm: 330px
+);

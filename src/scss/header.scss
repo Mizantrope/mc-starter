@@ -1,0 +1,16 @@
+// Header
+.header {
+    // .header__inner
+    &__inner {}
+    // .header__logo
+    &__logo {
+        font-family: $font-custom;
+        font-size: 3rem;
+    }
+    // .header__logo-title
+    &__logo-title {
+        &::first-letter {
+            color: #f90;
+        }
+    }
+}

@@ -1,0 +1,34 @@
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 500;
+    background-color: rgba(0,0,0,0.5);
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1000;
+    overflow-y: auto;
+    overflow-x: hidden;
+
+    &__dialog {
+        display: flex;
+        align-items: center;
+        max-width: 60rem;
+        margin: 2rem auto;
+        min-height: calc(100% - 4rem);
+    }
+
+    &__content {
+        width: 100%;
+        height: 10rem;
+        background-color: #fff;
+    }
+}

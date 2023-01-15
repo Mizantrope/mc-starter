@@ -1,0 +1,53 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    &::after,
+    &::before {
+        box-sizing: border-box;
+    }
+}
+
+html,
+body {
+    height: 100%;
+}
+
+html {
+    font-size: $font-size;
+}
+
+body {
+    min-width: $min-width;
+    background-color: $bg-color;
+    color: $font-color;
+    font-family: $font-base;
+    line-height: $line-height;
+}
+
+button,
+input,
+select,
+textarea {
+    font-family: inherit;
+    font-size: inherit;
+    font-style: inherit;
+    font-weight: inherit;
+}
+
+h1 {
+    margin-bottom: 2rem;
+
+    @extend %h1-style;
+}
+
+h2 {
+    margin-bottom: 1.5rem;
+    
+    @extend %h2-style;
+}
+
+p {
+    @extend %text-style;
+}

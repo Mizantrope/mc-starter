@@ -1,0 +1,17 @@
+// Safari bug
+%safari-bug {
+    transform: translate3d(0, 0, 0);
+    -webkit-backface-visibility: hidden;
+}
+
+%h1-style {
+    font-size: 3.6rem;
+}
+
+%h2-style {
+    font-size: 3rem;
+}
+
+%text-style {
+    font-size: 1.4rem;
+}

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    @@include('html/head.html', { "title": "Главная" })
+
+    <body>
+        <div id="layout">
+            <!-- Header -->
+            @@include('html/header.html')
+            <!-- Main -->
+            <main class="main">
+                <section>
+                    <form action="/" method="POST" name="form">
+                        <div class="step">
+                            <input type="text" name="name">
+                        </div>
+                        <div class="step">
+                            <input type="email" name="email">
+                        </div>
+                        <button type="submit">Send</button>
+                    </form>
+                </section>
+            </main>
+            <!-- Footer -->
+            @@include('html/footer.html')
+        </div>
+
+        <!-- Jquery -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+        <!-- Jquery inputmask -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.inputmask/5.0.7/jquery.inputmask.min.js"></script>
+        <!-- Jquey validate -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.min.js"></script>
+
+        <script src=" js/app.min.js"> </script>
+    </body>
+
+</html>

@@ -1,0 +1,33 @@
+.tabs {
+    &__list {
+        display: flex;
+        gap: 2px;
+        list-style: none;
+    }
+
+    &__item {
+        display: flex;
+        align-items: center;
+        height: 4rem;
+        padding: 0 1rem;
+        border-color: #eee;
+        border-style: solid;
+        border-width: 1px 1px 0;
+        background-color: #eee;
+        user-select: none;
+
+        &._active {
+            background-color: #fff;
+        }
+    }
+
+    &__content {
+        margin-top: -1px;
+        padding: 2rem;
+        border: 1px solid #eee;
+
+        &:not(._active) {
+            display: none;
+        }
+    }
+}

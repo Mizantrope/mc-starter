@@ -1,0 +1,36 @@
+@use "sass:map";
+
+.container {
+    margin: 0 auto;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    max-width: $grid-width;
+}
+
+@each $breakpoint, $max-width in $grid-max {
+    @media (max-width: map.get($grid-breakpoints, $breakpoint)) {
+        .container {
+            max-width: $max-width;
+        }
+    }
+}
+
+@mixin max($name) {
+    @each $breakpoint, $max-width in $grid-max {
+        @if($breakpoint == $name) {
+            @media (max-width: map.get($grid-breakpoints, $breakpoint)) {
+                @content;
+            }
+        }
+    }
+}
+
+@mixin min($name) {
+    @each $breakpoint, $max-width in $grid-max {
+        @if($breakpoint == $name) {
+            @media (min-width: map.get($grid-breakpoints, $breakpoint)+1) {
+                @content;
+            }
+        }
+    }
+}
